@@ -1,0 +1,273 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Домашняя работа №9 Формы</title>
+<!-- styles -->
+<link href="css/global.css" rel="stylesheet" >
+<link href="css/grid.css" rel="stylesheet" >
+<link href="css/form1.css" rel="stylesheet" >
+</head>
+<body>
+
+
+<div class="container-fluid">
+
+  <div class="row">
+		<div class="col-7">
+			<h3>My credits</h3>
+
+			<div class="intopinf">The following credit purchase options are available.<br>
+				Larger credit packages contain greater discounts per credit.
+			</div>
+
+			<form action="#" method="post" name="credit-card_form">
+			<table class="white1">
+				<tr>
+					<td><input type="checkbox" id="500c"><label for="500c" class="green">500 credits</label></td>
+					<td>$199.00</td>
+					<td>(39 ¢ each)</td>
+					<td>35% discount</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" id="340c"><label for="340c" class="green">340 credits</label></td>
+					<td>$149.00</td>
+					<td>(43 ¢ each)</td>
+					<td>28% discount</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" id="200c" checked><label for="200c" class="green">200 credits</label></td>
+					<td>$99.00</td>
+					<td>(49 ¢ each)</td>
+					<td>18% discount</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" id="110c"><label for="110c" class="green">110 credits</label></td>
+					<td>$60.00</td>
+					<td>(54 ¢ each)</td>
+					<td>9% discount</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" id="50c"><label for="50c" class="green">50 credits</label></td>
+					<td>$30.00</td>
+					<td>(60 ¢ each)</td>
+					<td></td>
+				</tr>
+			</table>
+
+		<div class="intopinf-l">
+			<div ><input type="checkbox" id="charge"><label for="charge" class="green"> </label></div>
+			<div>Automatically charge my credit card for the same amount of credits when my balance is low</div>
+		</div>
+
+				<table class="cardhold">
+					<tr>
+						<td>Credit Card</td>
+						<td>Paypall</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<p>Please enter your billing information in the form below. Make sure you enter correct information in the fields and they are completed properly. All fields are mandatory. </p>
+
+<h4>we accept</h4>
+
+<div class="cardimg">
+	<img src="img/visa.png" alt="visa">
+	<img src="img/mastercard.png" alt="mastercard">
+	<img src="img/discover.png"  alt="discover">
+	<img src="img/amex.png" alt="amex">
+</div>
+							<ul class="card_form">
+
+								<li>
+									<label for="name">Cardholder's Name</label>
+									<input id="name" type="text"  placeholder=""  required pattern="^.{5,40}$"/>
+									<span class="form_hint">For exsample: Paul von Shvartscopf XII</span>
+								</li>
+								<li>
+									<label for="cardcode">Credit Card Number</label>
+									<input type="text" id="cardcode" required pattern="[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}" placeholder="">
+									<span class="form_hint">Proper format "XXXX XXXX XXXX XXXX"</span>
+								</li>
+								<li>
+									<ul class="infomdate">
+									    <li><label for="day">Expiration Date</label>
+											<select size="1"  name="created" id="day">>
+												<option value="">&ensp;</option>
+												<option value="">01</option>
+												<option value="">02</option>
+												<option value="">03</option>
+												<option value="">04</option>
+												<option value="">05</option>
+											</select>
+										</li>
+										<li><label for="year">&ensp;</label>
+											<select size="1"  name="created" id="year">>
+												<option value="">&ensp;</option>
+												<option value="">2008</option>
+												<option value="">2009</option>
+												<option value="">2010</option>
+												<option value="">2011</option>
+												<option value="">2012</option>
+											</select>
+										</li>
+									    <li>
+											<label for="expl">Expiration Date</label>
+									<input type="text" name="date" id="expl" placeholder="" required pattern=""/>
+									<span class="form_hint">Proper format "dd.mm.YYYY"</span>
+										</li>
+									</ul>
+								</li>
+
+								<li>
+									<label for="street">Street Address</label>
+									<input id="street" type="text"  placeholder=""/>
+								</li>
+
+								<li>
+									<ul class="statecode">
+										<li>
+											<label for="state">State/Province</label>
+											<select size="1"  name="state" id="state">
+												<option value="">&ensp;</option>
+												<option value="">Mordor</option>
+												<option value="">Tristania</option>
+												<option value="">Aragon</option>
+												<option value="">Castilllion</option>
+												<option value="">Rohann</option>
+											</select>
+										</li>
+
+										<li>
+											<label for="zipc">Zip Code</label>
+											<input id="zipc" type="text"  placeholder="" required />
+										</li>
+
+									</ul>
+
+								</li>
+
+
+								<li>
+									<label for="count">Country</label>
+									<select size="1" name="count" id="count">
+										<option value="">&ensp;</option>
+										<option disabled>Russia</option>
+										<option value="">Albania</option>
+										<option value="">Ukraine</option>
+										<option value="">Kalimbdor</option>
+										<option value="Lorderon">Lorderon</option>
+									</select>
+								</li>
+
+								<li>
+									<label for="street2">Street Address</label>
+									<input id="street2" type="text"  placeholder="" required />
+								</li>
+
+							</ul>
+
+
+						</td>
+					</tr>
+				</table>
+
+				<div class="row-expand">
+
+					<div class="col-6">
+
+						<div class="white2">
+							<a href="#">Double-check your</a><br>
+							details and click Save<br>
+							<button class="submit" type="submit">save</button>
+						</div>
+
+					</div>
+				 <div class="col-6">
+						<span class="theprice"> Reading inbox messages is FREE of charge<br>
+The price of sending a message is 9 credits<br>
+The price of  Live Chat is 1 credit per minute<br>
+The price of Video Chat is 2 credit per minute<br>
+The price of Private Chat is 3 credit per minute<br>
+The price of 1 Video clip viewing is 15 credits<br>
+The price of contact information is 299 credits</span>
+					</div>
+				</div>
+			</form>
+		</div>
+
+
+
+	  <div class="col-5">
+	  
+	  	<img  src="img/mycredits.png"  alt="my credits" class="mydredimg">
+
+		  <div class="lastp">
+			  <h3>Last purchases</h3>
+			  <ul>
+				  <li>date and time</li>
+				  <li>purchases</li>
+			  </ul>
+
+			  <table>
+					  <td>18.10.2016 at 10:35</td>
+					  <td>500</td>
+				  </tr>
+				  <tr>
+					  <td>18.10.2016 at 10:35</td>
+					  <td>20</td>
+				  </tr>
+				  <tr>
+					  <td>18.10.2016 at 10:35</td>
+					  <td>100</td>
+				  </tr>
+				  <tr>
+				  <td>18.10.2016 at 10:35</td>
+				  <td>500</td>
+				</tr>
+				  <tr>
+				  <td>18.10.2016 at 10:35</td>
+				  <td>20</td>
+				 </tr>
+				  <tr>
+					  <td>18.10.2016 at 10:35</td>
+					  <td>100</td>
+				  </tr>
+			  </table>
+			  <!-- Разделительная линия в виде волны на css www.websovet.com/razdelitelnaya-liniya-v-vide-volny-na-css -->
+			  <div class="wave">
+				  <div class="smallLine smallLine1"></div>
+				  <div class="smallLine smallLine2"></div>
+			  </div>
+			  <div class="wave" style="bottom:5px">
+				  <div class="smallLine smallLine1"></div>
+				  <div class="smallLine smallLine2"></div>
+			  </div>
+
+
+			  <a href="#">See more >></a>
+		  </div>
+
+
+		  </div>
+  </div>
+
+</div>
+
+
+</body>
+
+<!-- Пробелы в поле для ввода номера карточки www.cyberforum.ru/javascript/thread1389185.html -->
+
+<script>
+    for (var i in ['input', 'change', 'blur', 'keyup']) {
+        cardcode.addEventListener('input', formatCardCode, false);
+    }
+    function formatCardCode() {
+        var cardCode = this.value.replace(/[^\d]/g, '').substring(0,16);
+        cardCode = cardCode != '' ? cardCode.match(/.{1,4}/g).join(' ') : '';
+        this.value = cardCode;
+        myform.number.value=this.value.split(" ").join("");
+    }
+</script>
+</html>

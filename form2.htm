@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Домашняя работа №9 Формa II</title>
+<!-- styles -->
+<link href="css/global.css" rel="stylesheet" >
+<link href="css/grid.css" rel="stylesheet" >
+<link href="css/form2.css" rel="stylesheet" >
+</head>
+<body>
+
+<form id="form1">
+<div class="container-fluid">
+	<div class="form-group">
+		<h1>Security</h1>
+		<h3>Change the email address</h3>
+	</div>
+
+	<div class="form-group">
+
+		<div class="row-expand">
+			<div class="col-6">
+				<label for="oemail">Current email adress</label>
+				<input id="oemail" type="email" placeholder="indicated@gmail.com">
+			</div>
+
+			<div class="col-6">
+	<p>After changing current email adress, your profile will go for moderation, and we will send you a link for verification of new email adress</p>
+			</div>
+
+		</div>
+
+		<div class="row-expand">
+			<div class="col-6">
+				<label for="nemail">New email adress</label>
+				<input id="nemail" type="email" placeholder="indicated@gmail.com">
+			</div>
+			<div class="col-6"></div>
+		</div>
+
+		<div class="row-expand">
+			<div class="col-6">
+				<label for="nnemail">Repeat new email adress</label>
+				<input id="nnemail" type="email" placeholder="indicated@gmail.com">
+			</div>
+			<div class="col-6"></div>
+		</div>
+
+		<button class="submit" type="submit">Change email</button>
+
+		<h3>Change the password</h3>
+	</div>
+
+	<div class="form-group">
+
+		<div class="row-expand">
+			<div class="col-6">
+				<label for="opassword">Current password</label>
+				<input id="opassword" type="password" placeholder="************">
+			</div>
+			<div class="col-6"></div>
+
+		</div>
+
+		<div class="row-expand">
+			<div class="col-6">
+				<label for="npassword">New password</label>
+				<input id="npassword" type="password" placeholder="************">
+			</div>
+			<div class="col-6"></div>
+		</div>
+
+		<div class="row-expand">
+			<div class="col-6">
+				<label for="nnpassword">New password</label>
+				<input id="nnpassword" type="password" placeholder="************">
+			</div>
+			<div class="col-6"></div>
+		</div>
+
+		<button class="submit" type="submit">Change password</button>
+
+		<h3>Change the phone number</h3>
+
+	</div>
+
+	<div class="form-group">
+
+		<div class="row-expand">
+			<div class="col-6">
+				<label for="otel">Current phone number</label>
+				<input id="otel" type="tel" placeholder="">
+			</div>
+
+			<div class="col-6">
+				<p>After changing current phone number, your profile will go for moderation</p>
+			</div>
+
+		</div>
+
+		<div class="row-expand">
+			<div class="col-6">
+				<label for="ntel">New phone number</label>
+				<input id="ntel" type="tel" placeholder="+38 (______) ___ - ___ - ___ " pattern="">
+			</div>
+			<div class="col-6"></div>
+		</div>
+
+		<div class="row-expand">
+			<div class="col-6">
+				<label for="nntel">Repeat new email adress</label>
+				<input id="nntel" type="tel" placeholder="">
+			</div>
+			<div class="col-6"></div>
+		</div>
+
+		<button class="submit" type="submit">Change phone number</button>
+
+	</div>
+
+</div>
+</form>
+
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.js"></script>
+<script>
+    $(function () {
+        $("#ntel").one('focus', function () {
+            $(this).val("+38 (")
+        });
+    });
+</script>
+</body>
+
+</html>
