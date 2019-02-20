@@ -1,0 +1,511 @@
+html {
+	background-color: whitesmoke;
+}
+
+body {
+	width: 1120px;
+	margin:0 auto
+}
+
+.container-fluid {background-color: inherit}
+
+.col-7 {
+	padding: 1rem;
+	background: #f1f1f1;
+	border-radius: 8px;
+	box-shadow: 0px 4px 0px 0px rgb(227,228,232)
+}
+
+h3 {font-size: 30px; margin-left: 40px; color: #4e5f6f}
+
+.intopinf {
+	display:block;
+	width: 350px;
+	font-size: 13px;
+	margin-left: 40px;
+	margin-bottom: 16px;
+	color: #4f6070;
+}
+
+
+	/* Белая таблцаа */
+.white1 {
+	background-color: #fefefe;
+	margin: 8px 40px;
+	width: 480px
+}
+.white1 td {
+	font-size: 13px;
+	padding: 4px;
+	line-height: 32px;
+	text-align: center;
+	width: 100px
+}
+.white1 tr {
+	display: block;
+	border-bottom: 2px;
+	border-color: #f1f1f1;
+	border-style: solid;
+}
+.white1 tr:last-child {
+	border: 0
+}
+.white1 tr td:first-child {
+	text-align: left;
+	width: 164px
+}
+
+/* Метка Зленый Чекбокс */
+label.green, .cardhold h4  {
+	color: #4e5f6f;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: uppercase;
+	padding-left: 35px;
+	margin-right: 15px;
+	text-align: left;
+	display: inline-block;
+	user-select: none;
+	cursor: pointer;
+	position: relative;
+}
+
+input[type=checkbox] {
+	position: absolute;
+	right: 9999px;
+}
+input[type=checkbox]:checked + label.green:before  {
+	content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTZEaa/1AAABrUlEQVRIS7WV3ytDYRjH90dQSmiLFiFx5cKdS0MuJJTUcqX8D3Ijd264IS7kwoUrirJCOzMmqc2PREttk9iPs2HZdh7v89TRtvNsZz/O3vpcnPd53u+n856385rqnGYVm8AhiAugQnAtZgwJKFcNXxJwC6oBM0mANq7BCGwowFfiikbgQIGcN2kkMgq4QsmMeadh+22XrSEVC+qdFlh5XYWMkoGT8Cnbg1QkaHK1w+HnMeCQYm565vqQsgWt7h64lK8p3Je4B/NFN9unUpag2dUBHvmGwsO/Eej1DLB92bCCRsmqmWuQ2uAs4qTwtJKGcd+MpodDI5i6s0MgGYTB25Gc+fXAJoXjWAts5NSKoREcfBxRSCL9BRO+WZqzP8zTHI6XHz9tVf66QmgEeCLOoxKFpZQULPqXIZqK0bOiKDDqnczp14P9Bi2uzv+PmT22QjuaXj1YAWIRxw+PoTqCyZDukeQoKECs7j54+n4mwdzjAtujR1EB0nXVD3vv+2ytFHQF1YKCWv6u4yio+YWDlz1XNAK6MpGaXvoqwwLcroSAW1AKuBYzcFdEptn0B6xgsmD2XaIlAAAAAElFTkSuQmCC');
+	font-size: inherit;
+	line-height: inherit;
+}
+
+label.green:before {
+	content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA40lEQVRIie2WMU4DMRBFn10gJLJVKi7AsRLOlnuYHgq7NpdICntkreSZFEkERFQrI1HsKz3S+6NxMeP44hF4Ah4AxzIMmIFqZu17YUop7UUkqGqxhahqKaWEGOMOmMzs0nmMcdd7Py4V39N7P6aU9tepsC2lhFHyGyISgK0DnlX10zm3WTj33z/DrHjvXzzgRsu5SDeA86PF96wBa8AasAb8lwAzszJabGYVMA/MrbWP0QGttXdg9kDNOR9U9TRKrqqnnPMBqLe3KaX0KiJvqlqXrklVrSISrvt4MrMf58mfnC1n48OFCnHmcPYAAAAASUVORK5CYII=');
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin-right: 10px;
+	position: absolute;
+	left: 0;
+	top: 4px;
+}
+
+/* Доп чекбокс */
+.intopinf-l {
+	display: block;
+	width:360px;
+	margin: 16px 46px;
+}
+.intopinf-l div:first-child {
+	width: 40px;
+	display: inline-block;
+	float: left;
+}
+.intopinf-l div:last-child {
+	font-size: 13px;
+	color: #8e959c
+}
+.intopinf-l label.green {
+	bottom: 16px;
+  left:1px
+}
+
+/* Вторая таблица с информацией о карточках */
+.cardhold {
+	width: 480px;
+	margin: 8px 40px;
+	border-collapse: collapse;
+	border-spacing:0;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px ;
+}
+.cardhold td {
+	background-color: #fefefe;
+}
+.cardhold tr:first-child td:first-child {
+	width: 144px;
+	height: 44px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 16px;
+	color: #5e6d7b;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px ;
+}
+
+.cardhold tr:first-child td:nth-child(2) {
+	text-align: left;
+	padding-left: 28px;
+	vertical-align: middle;
+	font-size: 16px;
+	color: #5e6d7b;
+	background-color: transparent;
+}
+
+.cardhold p {
+	display:block;
+	width: 430px;
+	margin: 16px auto;
+	text-indent: 0;
+	font-family: "Roboto Light";
+	font-size:13px;
+	color:#4f6070
+}
+
+.cardhold h4 {
+	margin-left: 28px;
+	margin-bottom: 8px;
+	padding: 0; cursor: default;
+}
+
+/*  Стили для пиктограм карточек */
+.cardimg {
+	text-align: left;
+	margin-left: 27px;
+}
+.cardimg img {
+	width: 74px;
+	height: 46px;
+	margin: 0 1px;
+}
+
+
+/* === Form List Styles === */
+ul.card_form  {
+	list-style-type:none;
+	list-style-position:outside;
+	margin-top:8px;
+	padding-bottom:32px;
+	margin-left: 20px;
+}
+.card_form li{
+	padding:8px;
+	position:relative;
+	list-style: none;
+}
+
+
+/* === Form Header === */
+
+.required_notification {
+	color:#d45252;
+	margin:5px 0 0 0;
+	display:inline;
+	float:right;
+}
+
+/* === Form Elements === */
+.card_form label {
+	font: normal 14px/17px Arial;
+	width:250px;
+	margin-bottom: 3px;
+	display:block;
+	padding:3px;
+	clear: both;
+}
+.card_form input, .card_form select{
+	height:40px;
+	width:430px;
+	padding:5px 8px;
+}
+
+
+ /* Как делать инпуты в две  колонки */
+.infomdate, .statecode {
+	display: block;
+	width: auto;
+	height: auto;
+	margin: -8px;
+	position: relative;
+	z-index: 5
+}
+.infomdate li, .statecode li{
+	display: inline-block;
+	float: left;
+}
+.infomdate li:first-child, .infomdate li:nth-child(2) {
+	width: 26%
+}
+.infomdate li:first-child select, .infomdate li:nth-child(2) select {
+	width: 100px;
+	background-position: 90%;
+}
+.infomdate li:last-child {
+	width: 42%
+}
+.infomdate li:last-child input {
+	width: 190px
+}
+
+.statecode li {
+	width: 50%
+}
+.statecode li input, .statecode li select {
+	width: 200px;
+	background-position: 95%;
+}
+
+/* Кастомизируем  select */
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	text-indent: 0.01px;
+	text-overflow: '';
+	-ms-appearance: none;
+	appearance: none!important;
+	background: #fff url(../img/select-arrow.png) no-repeat 98% center;
+
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+/* form element visual styles */
+.card_form input, .card_form select {
+	border:1px solid #aaa;
+	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+	border-radius:6px;
+	padding-right:30px;
+	transition: padding .25s;
+}
+.card_form input:focus, .card_form textarea:focus {
+	background: #fff;
+	border:1px solid #555;
+	box-shadow: 0 0 3px #aaa;
+	padding-right:70px;
+}
+
+/* === HTML5 validation styles === */
+.card_form input:required, .card_form textarea:required {
+	background: #fff url(../img/red_asterisk.png) no-repeat 98% center;
+}
+.card_form input:required:valid, .card_form textarea:required:valid {
+	background: #fff url(../img/valid.png) no-repeat 98% center;
+	box-shadow: 0 0 5px #5cd053;
+	border-color: #28921f;
+}
+.card_form input:focus:invalid, .card_form textarea:focus:invalid {
+	background: #fff url(../img/invalid.png) no-repeat 98% center;
+	box-shadow: 0 0 5px #d45252;
+	border-color: #b03535
+}
+
+/* === Form hints === */
+.form_hint {
+	background: #d45252;
+	width: 310px;
+	border-radius: 3px 3px 3px 3px;
+	color: white;
+	margin-left:8px;
+	padding: 1px 6px;
+	z-index: 999; /* hints stay above all other elements */
+	position: absolute; /* allows proper formatting if hint is two lines */
+	display: none;
+}
+.form_hint::before {
+	content: "\25C0";
+	color:#d45252;
+	position: absolute;
+	top:1px;
+	left:-6px;
+}
+.card_form input:focus + .form_hint {display: inline;}
+.card_form input:required:valid + .form_hint {background: #28921f;}
+.card_form input:required:valid + .form_hint::before {color:#28921f;}
+
+/* === Button Style === */
+button.submit {
+	display: block;
+	width: 135px;
+	height: 50px;
+	margin-left: auto; margin-right: auto;
+	letter-spacing: normal;
+	text-transform: uppercase;
+	background-color: #68b12f;
+	background: linear-gradient(top, #68b12f, #50911e);
+	border: 1px solid #509111;
+	border-bottom: 1px solid #5b992b;
+	border-radius: 3px;
+	box-shadow: inset 0 1px 0 0 #9fd574;
+	color: white;
+	font-weight: bold;
+	padding: 6px 20px;
+	text-align: center;
+	text-shadow: 0 -1px 0 #396715;
+}
+button.submit:hover {
+	opacity:.85;
+	cursor: pointer;
+}
+button.submit:active {
+	border: 1px solid #20911e;
+	box-shadow: 0 0 10px 5px #356b0b inset;
+}
+
+/* Квадрат для кнопки */
+.white2 {
+	display:block;
+	width: 200px;
+	height: 150px;
+	margin: 16px 0 0 0;
+	background-color: white;
+	font-size: 14px;
+	font-weight: bold;
+	color: #a4a9ae;
+	padding-top: 20px;
+	text-align: center;
+	letter-spacing: 1px;
+	box-shadow: 0px 4px 0px 0px rgb(227,228,232);
+	border-radius: 8px;
+	position: relative;
+}
+
+.white2 a {
+	letter-spacing: normal;
+	color: #ec1c23;
+	text-decoration: none;
+}
+
+.white2 a:hover {
+	text-decoration: underline;
+}
+
+.row-expand {
+	margin-left: 40px;
+	width: 480px;
+  position:relative 
+}
+
+.row-expand:before {
+	content: "";
+	display: block;
+	position: absolute;
+	float: right;
+	width: 2px;
+	height: 130px;
+	background-color: #e4e4e4;
+	top: 30px;
+	left:47%
+}
+
+
+.theprice {
+	display: block;
+	font-family: "Roboto Light";
+	font-size: 11px;
+	line-height: 20px;
+	margin-top: 16px;
+}
+
+
+/* */
+
+.col-5 {
+	text-align: center
+}
+.mydredimg {
+	width: 241px;
+	height: 241px;
+	margin: 40px auto;
+}
+
+.lastp {
+	display: block;
+	margin-left: 28px
+}
+.lastp h3{
+	display:block;
+	text-align: left;
+	color: #4e5f6f;
+	font-size: 20px;
+	margin-left:0;
+}
+
+.lastp table {
+	border-collapse: collapse;
+}
+.lastp table td {
+	height: 40px
+}
+.lastp table tr td:last-child, .lastp ul li:last-child {
+	background-color: #ecfcff;
+	border: 1px solid #bae3f4;
+	width: 205px;
+	font-size: 16px;
+	color: #4e5f6f
+}
+.lastp table tr td:first-child, .lastp ul li:first-child {
+	background-color: #FFFFFF;
+	border: 1px solid #F5F5F6;
+	border-right-color:#bae3f4;
+	width: 205px;
+	font-size: 13px;
+	color: #8e959c
+}
+
+.lastp ul {
+	margin-bottom: 0
+}
+
+.lastp ul>li {
+	font-weight: bold;
+	font-size: 10px !important;
+	color: #4f6070 !important;
+	text-transform: uppercase;
+	list-style-type: none;
+	display: inline-block;
+	float: left;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+.lastp ul li:last-child {
+	height: 50px;
+	padding-top:20px
+
+}
+.lastp ul li:first-child {
+	height: 40px;
+	position: relative;
+	top: 10px;
+	padding-top: 9px;
+	background-color: #fafafb;
+}
+
+
+/* Разделительная линия в виде волны на css www.websovet.com/razdelitelnaya-liniya-v-vide-volny-na-css*/
+
+.wave {
+	overflow: hidden;
+	position: relative;
+	width: 410px;
+	height: 10px;
+}
+
+.smallLine {
+	position: absolute;
+	width: 410px;
+	height: 5px;
+}
+.smallLine1 {
+	background: linear-gradient(45deg, transparent, transparent 49%, #bae3f4 49%, transparent 51%);
+}
+.smallLine2 {
+	background: linear-gradient(-45deg, transparent, transparent 49%, #bae3f4 49%, transparent 51%);
+}
+.smallLine {
+	background-size: 10px 10px;
+}
+
+.lastp>a {
+	float: left;
+	text-transform: uppercase;
+	font-size: 11px;
+	font-weight: bold;
+	color: #c6c6c6;
+}

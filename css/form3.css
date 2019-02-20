@@ -1,0 +1,222 @@
+﻿html {
+	background-color: whitesmoke;
+}
+
+body {
+	width: 1120px;
+	margin:0 auto;
+}
+
+.container-fluid {background-color: inherit}
+
+form {display:block;
+	width: 1020px;
+	margin: 0 auto;
+}
+
+.form-group {
+	background-color: #f1f1f1;
+	padding: 25px 50px 40px;
+	border-top: 1px solid #d2cfc7;
+}
+
+.form-group h1 {
+	font-size: 30px;
+	color:#4e5f6f;
+	margin-top:0;
+	}
+
+form .form-group:first-child {
+	border-top: 0;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px ;
+}
+
+form .form-group:nth-child(2) {
+	background-color: #f0ebd8;
+}
+
+form .form-group:last-child {
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+	box-shadow: 0 3px 0 #e3e4e8;
+	background-color: #f1f1f1;
+}
+
+
+h6, label {
+	font: normal 13px/17px "Roboto Medium";
+	opacity: .6;
+	width: 300px;
+	margin-bottom: 3px;
+	display: block;
+	padding: 3px;
+	clear: both;
+}
+
+h6 {margin-top: 16px; padding: 0}
+
+#birth, #month, #year {
+	width: 135px;
+	background-position: 90%;
+}
+
+select, input {
+	height: 40px;
+	width: 100%;
+	padding: 5px 8px;
+	border: 1px solid #aaa;
+	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+	border-radius: 6px;
+	padding-right: 30px;
+	transition: padding .25s;
+	font-size: 13px;
+	color: #97a1aa;
+	background-color: white;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	text-indent: 0.01px;
+	text-overflow: '';
+	-ms-appearance: none;
+	appearance: none!important;
+	background: #fff url(../img/select-arrow.png) no-repeat 98% center;
+}
+
+#birth, #month, #year {
+	background-position: 93%;
+}
+
+#sign, #status {
+	background-position: 96%;
+}
+
+textarea {
+	border: 1px solid #aaa;
+	background: #fff;
+	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+	border-radius: 6px;
+	transition: padding .25s;
+	padding: 16px;
+	width: 100%;
+	height: 135px;
+}
+
+/* Кстомизация  placeholder: www.html5.by/blog/placeholder/  */
+
+textarea::-webkit-input-placeholder, input::-webkit-input-placeholder {color:#97a1aa; font-size: 13px}
+textarea::-moz-placeholder, input::-moz-placeholder {color:#97a1aa; font-size: 13px}
+textarea:-ms-input-placeholder, input:-ms-input-placeholder {color:#97a1aa; font-size: 13px}
+
+textarea:focus::-webkit-input-placeholder, input:focus::-webkit-input-placeholder {color: transparent}
+textarea:focus::-moz-placeholder, input:focus::-moz-placeholder  {color: transparent}
+textarea:focus:-ms-input-placeholder, input:focus:-ms-input-placeholder  {color: transparent}
+
+/* Чекбоксы  */
+
+input[type=checkbox] {
+	position: absolute;
+	right: 9999px;
+}
+
+label.green {
+	color: #97a1aa;
+	font-size: 13px;
+	padding:8px 20px 8px 35px;
+	text-align: left;
+	display: inline-block;
+	user-select: none;
+	cursor: pointer;
+	position: relative;
+	opacity: 1;
+
+}
+
+input[type=checkbox] {
+	position: absolute;
+	right: 99999px;
+}
+input[type=checkbox]:checked + label.green:before  {
+	content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTZEaa/1AAABrUlEQVRIS7WV3ytDYRjH90dQSmiLFiFx5cKdS0MuJJTUcqX8D3Ijd264IS7kwoUrirJCOzMmqc2PREttk9iPs2HZdh7v89TRtvNsZz/O3vpcnPd53u+n856385rqnGYVm8AhiAugQnAtZgwJKFcNXxJwC6oBM0mANq7BCGwowFfiikbgQIGcN2kkMgq4QsmMeadh+22XrSEVC+qdFlh5XYWMkoGT8Cnbg1QkaHK1w+HnMeCQYm565vqQsgWt7h64lK8p3Je4B/NFN9unUpag2dUBHvmGwsO/Eej1DLB92bCCRsmqmWuQ2uAs4qTwtJKGcd+MpodDI5i6s0MgGYTB25Gc+fXAJoXjWAts5NSKoREcfBxRSCL9BRO+WZqzP8zTHI6XHz9tVf66QmgEeCLOoxKFpZQULPqXIZqK0bOiKDDqnczp14P9Bi2uzv+PmT22QjuaXj1YAWIRxw+PoTqCyZDukeQoKECs7j54+n4mwdzjAtujR1EB0nXVD3vv+2ytFHQF1YKCWv6u4yio+YWDlz1XNAK6MpGaXvoqwwLcroSAW1AKuBYzcFdEptn0B6xgsmD2XaIlAAAAAElFTkSuQmCC');
+	font-size: inherit;
+	line-height: inherit;
+}
+
+input[type=checkbox]:checked + label.green {color: blue}
+
+
+label.green:before {
+	content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA40lEQVRIie2WMU4DMRBFn10gJLJVKi7AsRLOlnuYHgq7NpdICntkreSZFEkERFQrI1HsKz3S+6NxMeP44hF4Ah4AxzIMmIFqZu17YUop7UUkqGqxhahqKaWEGOMOmMzs0nmMcdd7Py4V39N7P6aU9tepsC2lhFHyGyISgK0DnlX10zm3WTj33z/DrHjvXzzgRsu5SDeA86PF96wBa8AasAb8lwAzszJabGYVMA/MrbWP0QGttXdg9kDNOR9U9TRKrqqnnPMBqLe3KaX0KiJvqlqXrklVrSISrvt4MrMf58mfnC1n48OFCnHmcPYAAAAASUVORK5CYII=');
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin-right: 10px;
+	position: absolute;
+	left: 0;
+	top: 5px;
+}
+
+/* Белый прямоугольник для кнопки */
+.white2 {
+	display:block;
+	width: 915px;
+height: 75px;
+	margin: 16px 0 0 0;
+	background-color: white;
+	font-size: 14px;
+	font-weight: bold;
+	color: #a4a9ae;
+	text-align: center;
+	letter-spacing: 1px;
+	box-shadow: 0px 4px 0px 0px rgb(227,228,232);
+	border-radius: 8px;
+	position: relative;
+	padding: 28px 30px 30px 60px;
+}
+
+.white2 span {display: block; float: left}
+
+.white2 a {
+	letter-spacing: normal;
+	color: #ec1c23;
+	text-decoration: none;
+}
+
+.white2 a:hover {
+	text-decoration: underline;
+}
+
+/* === Button Style === */
+button.submit {
+	display: block;
+	width: 135px;
+	height: 50px;
+	float: right;
+	letter-spacing: normal;
+	text-transform: uppercase;
+	background-color: #68b12f;
+	background: linear-gradient(top, #68b12f, #50911e);
+	border: 1px solid #509111;
+	border-bottom: 1px solid #5b992b;
+	border-radius: 3px;
+	box-shadow: inset 0 1px 0 0 #9fd574;
+	color: white;
+	font-weight: bold;
+	padding: 6px 20px;
+	text-align: center;
+	text-shadow: 0 -1px 0 #396715;
+	position: relative;
+	bottom: 16px
+}
+button.submit:hover {
+	opacity:.85;
+	cursor: pointer;
+}
+button.submit:active {
+	border: 1px solid #20911e;
+	box-shadow: 0 0 10px 5px #356b0b inset;
+}
+
+#form2 {padding-top: 2rem}

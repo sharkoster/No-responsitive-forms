@@ -1,0 +1,147 @@
+﻿html {
+	background-color: whitesmoke;
+}
+
+body {
+	width: 1120px;
+	margin:0 auto;
+}
+
+.container-fluid {background-color: inherit}
+
+form {display:block;
+	width: 1020px;
+	margin: 0 auto;
+}
+
+.row-expand {position: relative}
+
+.form-group {
+	background-color: #f1f1f1;
+	padding: 25px 50px 16px;
+	border-top: 1px solid #d2cfc7;
+}
+
+.form-group h1, .form-group h3 {
+	font-size: 30px;
+	color:#4e5f6f;
+	margin:0;
+	}
+
+.form-group h3 {
+	font-size: 20px;
+	margin-top:2rem;
+}
+
+form .form-group:first-child {
+	border-top: 0;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px ;
+}
+
+
+
+form .form-group:last-child {
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+	box-shadow: 0 3px 0 #e3e4e8;
+	background-color: #f1f1f1;
+}
+
+
+h6, label {
+	font: normal 13px/17px "Roboto Medium";
+	opacity: .6;
+	width: 300px;
+	margin-bottom: 3px;
+	display: block;
+	padding: 3px;
+	clear: both;
+}
+
+h6 {margin-top: 16px; padding: 0}
+
+p {
+	text-indent: 0;
+	color: #4e5f6f;
+	font-size: 13px;
+	display: inline-block;
+	position: absolute;
+	float: right;
+	top:23px;
+	margin-left:4rem;
+	width: 345px;
+	height: 30px;;
+}
+
+p:before {
+	content: "";
+	background: transparent url(../img/i.png) no-repeat 98% center;
+	display: inline-block;
+	width: 26px;
+	height: 25px;
+	position: absolute;
+	left:-42px;
+	top: 5px;
+}
+
+input {
+	height: 40px;
+	width: 100%;
+	padding: 5px 8px;
+	border: 1px solid #aaa;
+	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+	border-radius: 6px;
+	padding-right: 30px;
+	transition: padding .25s;
+	font-size: 13px;
+	color: #97a1aa;
+	background-color: white;
+}
+
+
+
+/* Кстомизация  placeholder: www.html5.by/blog/placeholder/  */
+
+input::-webkit-input-placeholder {color:#97a1aa; font-size: 13px}
+input::-moz-placeholder {color:#97a1aa; font-size: 13px}
+input:-ms-input-placeholder {color:#97a1aa; font-size: 13px}
+input:focus::-webkit-input-placeholder {color: transparent}
+input:focus::-moz-placeholder  {color: transparent}
+input:focus:-ms-input-placeholder  {color: transparent}
+
+
+
+
+/* === Button Style === */
+button.submit {
+	display: block;
+	width: auto;
+	height: 45px;
+	margin: 1rem 0 0;
+	letter-spacing: normal;
+	text-transform: uppercase;
+	background-color: #68b12f;
+	background: linear-gradient(top, #68b12f, #50911e);
+	border: 1px solid #509111;
+	border-bottom: 1px solid #5b992b;
+	border-radius: 3px;
+	box-shadow: inset 0 1px 0 0 #9fd574;
+	color: white;
+	font-weight: bold;
+	font-size: 14px;
+	padding: 6px 20px;
+	text-align: center;
+	text-shadow: 0 -1px 0 #396715;
+	position: relative;
+}
+button.submit:hover {
+	opacity:.85;
+	cursor: pointer;
+}
+button.submit:active {
+	border: 1px solid #20911e;
+	box-shadow: 0 0 10px 5px #356b0b inset;
+}
+
+#form2 {padding-top: 2rem}

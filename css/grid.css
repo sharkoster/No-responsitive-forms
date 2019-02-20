@@ -1,0 +1,82 @@
+﻿
+/* В Bootstrap 4, релизовывают систему сеток, основаную на REM,
+очевидно чтобы можно было произвольно менять ширину колонок сетки, в зависимости
+от базовых размеров шрифта.
+ */
+
+html {
+	font-size:16px; /* В этом случае 1rem равен 16px */
+	background-color: darkgray
+}
+/* При размере шрифта в 16 px, максимальная ширина сетки из 12 колонок в 72 REM будет равна 1152 px
+ 72 / 12 = 6. То есть минимальная колонка col-1 будет иметь ширину 6rem, то есть 16*6=96 px  */
+body { display: block; margin:.5rem 1rem; padding:1rem; background-color: white; }
+
+/* Не резиновый блок внутри которого колонки имеют фиксированную ширину */
+.container {display: block; width: 74rem;  height: auto; padding: .5rem 1rem; margin: 0 auto; background-color: #f2f2f2}
+
+.container-fluid {display: block; width: 100%;  height: auto; padding: 0; background-color: #f2f2f2}
+
+/* Ряд без отступов в уолонках и ряд с отступами в колонках*/
+.row, .row-expand {display: block; width: 100%; margin: 0; padding: 0}
+
+/* Колонки ряда с отступами в колонках*/
+.row-expand > * {padding: 0 .5rem;	margin-bottom: 1rem;}
+.row-expand > *:first-child {padding-left: 0}
+.row-expand > *:last-child {padding-right: 0}
+
+.row::after, .row-expand::after {
+	content: '';
+	height: 0;
+	display: block;
+	clear: both;
+}
+
+.border {
+	padding: .5rem;
+	border: 1px solid darkgray;
+	background-color: #ccc;
+}
+
+.col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1{display: inline-block; float: left;}
+
+.container .col-12 { width: 72rem }
+.container .col-11 { width: 66rem}
+.container .col-10 { width: 60rem }
+.container .col-9 { width: 54rem }
+.container .col-8 { width: 48rem }
+.container .col-7 { width: 42rem }
+.container .col-6 { width: 36rem }
+.container .col-5 { width: 30rem }
+.container .col-4 { width: 24rem }
+.container .col-3 { width: 18rem }
+.container .col-2 { width: 12rem }
+.container .col-1 { width: 6rem }
+
+/* Резиновый еонтейнер */
+.container-fluid .col-12 { width: 100%}
+.container-fluid .col-11 {width: 91.666665%}
+.container-fluid .col-10 {width: 83.333332%}
+.container-fluid .col-9 {	width: 75%}
+.container-fluid .col-8 {	width: 66,666665%}
+.container-fluid .col-7 {	width: 58.333332%}
+.container-fluid .col-6 { width: 50%}
+.container-fluid .col-5 {	width: 41.6666666%}
+.container-fluid .col-4 {	width: 33.333332%}
+.container-fluid .col-3 { width: 25%}
+.container-fluid .col-2 { width: 16.666665%}
+.container-fluid .col-1 { width: 8.333332%}
+
+h1 {font-size: 3rem; margin:1.5rem 0 }
+
+h3 {font-size: 1.5rem; margin:1rem 0 1.2rem}
+
+.container h1:after, hr:after {
+	display: block;
+	content: "";
+	width: 72rem;
+	height: 2px;
+	background-color: darkgray;
+	position: absolute;
+	margin-top: 1rem;
+}
